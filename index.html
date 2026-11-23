@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Laundry Service</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="basic">
+        <a class="logo" href="#home">Logo</a>
+        <nav>
+          <a href="#home">Home</a>
+          <a href="#service">Services</a>
+          <a href="#About">About us</a>
+          <a href="#contact">Contact us</a>
+        </nav>
+        <a class="user" href="#booking">Username</a>
+      </div>
+    </header>
+    <main>
+      <section class="hero" id="home">
+        <div class="hero-content">
+          <h1>
+            Revitalize Your<br />
+            Clothes with Expert<br />
+            <span>Laundry Services!</span>
+          </h1>
+          <p>
+            From premium dry cleaning to swift wash and fold, we deliver care
+            and convenience. Schedule a pickup and rediscover the freshness of
+            your clothes today!
+          </p>
+          <a href="#booking" class="primary">Book a Service Today</a>
+        </div>
+        <div class="hero-img">
+          <img src="Laundry_image.png" alt="Laundry Service" />
+        </div>
+      </section>
+      <section class="achievements">
+        <h2>Our Achievements</h2>
+        <div class="achievements-items">
+          <div>
+            <h3>15+</h3>
+            <p>Happy Customers</p>
+          </div>
+          <div>
+            <h3>2+ Yrs</h3>
+            <p>Experience</p>
+          </div>
+        </div>
+      </section>
+      <section class="booking-container">
+        <div class="service-box">
+          <h3>Available services</h3>
+          <p class="small-text">Click Add Item to add services to your cart.</p>
+          <div class="service-item">
+            <div>
+              <span>👕</span>
+              <strong>Dry Cleaning</strong>
+              <span class="price">₹200.00</span>
+            </div>
+            <button onclick="addService('Dry Cleaning', 200)">Add Item</button>
+          </div>
+          <div class="service-item">
+            <div>
+              <span>🧺</span>
+              <strong>Wash & Fold</strong>
+              <span class="price">₹100.00</span>
+            </div>
+            <button onclick="addService('Wash & Fold', 100)">Add Item</button>
+          </div>
+          <div class="service-item">
+            <div>
+              <span>👔</span>
+              <strong>Ironing</strong>
+              <span class="price">₹50.00</span>
+            </div>
+            <button onclick="addService('Ironing', 50)">Add Item</button>
+          </div>
+          <div class="service-item">
+            <div>
+              <span>✨</span>
+              <strong>Stain Removal</strong>
+              <span class="price">₹150.00</span>
+            </div>
+            <button onclick="addService('Stain Removal', 150)">Add Item</button>
+          </div>
+          <div class="service-item">
+            <div>
+              <span>🧥</span>
+              <strong>Leather & Suede Cleaning</strong>
+              <span class="price">₹700.00</span>
+            </div>
+            <button onclick="addService('Leather & Suede Cleaning', 700)">
+              Add Item
+            </button>
+          </div>
+          <div class="service-item">
+            <div>
+              <span>👗</span>
+              <strong>Wedding Dress Cleaning</strong>
+              <span class="price">₹800.00</span>
+            </div>
+            <button onclick="addService('Wedding Dress Cleaning', 800)">
+              Add Item
+            </button>
+          </div>
+           <p class="add-info">
+                Add items to the cart and book now.
+            </p>
+        </div>
+        <div class="cart-box">
+            <h3>Added Items</h3>
+            <div class="cart-heading">
+                <span>Service Name</span>
+                <span>Price</span>
+               <span>Action</span>
+            </div>
+            <div id="cart-items">
+                <p class="empty-cart">No items added yet.</p>
+            </div>
+
+            <div class="total">
+                <strong>Total Amount:</strong>
+                <strong id="total">₹0.00</strong>
+            </div>
+
+            <hr>
+             <div id="booking">
+                <h3>Book Now</h3>
+                <p class="small-text">Fill the details to confirm your booking.</p>
+
+                <form id="booking-form">
+
+                    <label>Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+
+                    <label>Email ID</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+
+                    <label>Phone Number</label>
+                    <input type="tel" id="phone" placeholder="Enter phone number"
+                    pattern="[0-9]{10}" required>
+
+                    <button type="submit" class="book-btn">Book Now</button>
+
+                    <p id="booking-message"></p>
+
+                </form>
+            </div>
+        </div>
+        </div>
+      </section>
+      
+    </main>
+  </body>
+</html>
