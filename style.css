@@ -136,26 +136,197 @@ a {
 .achievements span {
     font-size: 13px;
 }
-.services-section {
-    width: min(1200px, 95%);
-    margin: 50px auto;
-    padding: 25px;
-    background: #f4f7f9;
-    display: grid;
+.services-section{
+    width: 1200px;
+    margin:50px auto;
+    padding:25px;
+    background-color: white;
+    display:grid;
     grid-template-columns: 1.3fr 0.9fr;
-    gap: 20px;
-    align-items: stretch;
+    gap:20px;
+    align-items:stretch;
+
 }
-.services-box {
-    background: white;
+.services-box{
+    background-color: white;
+    border-radius:18px;
+    padding:30px;
+}
+.services-box h2{
+    font-size: 20px;
+    color:#34434b;
+}
+.services-subtitle{
+    font-size: 15px;
+    color:#92999d;
+    margin-bottom: 25px;
+    padding-bottom: 20px;
+     border-bottom: 1px solid #eeeeee;
+}
+.services-list{
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+}
+.service-item{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:10px;
+    min-height:45px;
+    font-size: 18px;
+    color:#34434b;
+}
+.service-item span{
+    display:flex;
+    align-items: center;
+    gap:5px;
+}
+.service-item strong{
+    color: #555eea;
+    font-size: 18px;  
+}
+.service-item button{
+    min-width:108px;
+    border: none;
+    background-color: #f2f4f4;
+    padding:10px;
     border-radius: 18px;
-    padding: 25px;
+    font-size:11px;
+    font-weight: bold;
+    color: #53616b;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:5px;
+}
+.service-item button:hover {
+    background: skyblue;
+}
+.service-item button ion-icon {
+    font-size: 16px;
+}
+.service-item button.remove-btn {
+    color: #e0526c;
+    background: #fff5f6;
+}
+.service-note{
+    margin-top:25px;
+    padding-top: 20px;
+    border-top:1px solid #eeeeee;
+    color:#6268e9;
+    font-size: 18px;
+    display: flex;align-items:center;
+    gap:5px;
+}
+.right-section{
+    display: flex;
+    flex-direction: column;
+    gap:15px;
+}
+.cart-box{
+    background-color: white;
+    border-radius: 18px;
+    overflow:hidden;   
+}
+.cart-box h3{
+    text-align: center;
+    font-size: 15px;
+    padding: 15px;
+    color:#34434b
+}
+.cart-box table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 11px;
+}
+.cart-box th {
+    background: #f5f7f8;
+    text-align: left;
+    padding: 10px;
+    color: #53616b;
+}
+.cart-box td {
+    padding: 10px;
+    border-bottom: 1px solid #eeeeee;
+    color: #7d8589;
+}
+.cart-box th:first-child,
+.cart-box td:first-child {
+    text-align: center;
+    width: 45px;
+}
+.cart-box th:last-child,
+.cart-box td:last-child {
+    text-align: right;
+}
+.empty-cart {
+    text-align: center;
+}
+.total {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    font-size: 13px;
+    color: #34434b;
+    margin-top: 20px;
 }
 
-.services-box h2 {
-    font-size: 27px;
+.booking-box {
+    background: white;
+    padding: 20px;
+    border-radius: 18px;
+}
+.booking-box h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
     color: #34434b;
 }
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 12px;
+  
+}
+.form-group label {
+    font-size: 18px;
+    color: #53616b;
+}
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e5e8eb;
+    border-radius: 9px;
+    outline: none;
+    font-size: 15px;
+}
+.form-group input:focus {
+    border-color: #555ef1;
+}
+.book-btn {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 10px;
+    background: #555ff1;
+    color: white;
+    font-weight: bold;
+    font-size: 13px;
+    cursor: pointer;
+}
+.book-btn:hover {
+    background: #414bd6;
+}
+#booking-message {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #279b65;
+}
+
+
 
 
 
